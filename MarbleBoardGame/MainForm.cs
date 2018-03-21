@@ -35,7 +35,6 @@ namespace MarbleBoardGame
             {
                 splitContainer1.Panel1.Controls.Add(mbControl);
                 splitContainer1.Panel2.Controls.Add(analysisPane);
-                
             }
         }
 
