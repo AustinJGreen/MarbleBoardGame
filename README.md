@@ -18,5 +18,5 @@ The back is rendered with MonoGame as a WindowsFormControl. The board and marble
 Engine, Jitter. AI is alright, can only beat a random opponent 60-70% of the time. Algorithms implemented include, MaxN, Paranoid, MCTS, Offensive, 
 and a MPMix. MaxN is probably the strongest. I implemented a stronger engine called Bach in C++ [here](https://github.com/ajosg/Bach).
 
-# Screenshots
-![Imgur link expired.][https://imgur.com/gFieQVN]
+# Screenshot
+![alt text](https://i.imgur.com/gFieQVN.png)
