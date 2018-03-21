@@ -1187,12 +1187,12 @@ namespace MarbleBoardGame
 
             Texture2D[] dieTextures = new Texture2D[6]
             {
-                content.Load<Texture2D>("die1"),
-                content.Load<Texture2D>("die6"),
-                content.Load<Texture2D>("die3"),
-                content.Load<Texture2D>("die4"),
-                content.Load<Texture2D>("die5"),
-                content.Load<Texture2D>("die2")
+                Legacy.LoadTexture(device, "die1"),
+                Legacy.LoadTexture(device, "die6"),
+                Legacy.LoadTexture(device, "die3"),
+                Legacy.LoadTexture(device, "die4"),
+                Legacy.LoadTexture(device, "die5"),
+                Legacy.LoadTexture(device, "die2")
             };
 
 

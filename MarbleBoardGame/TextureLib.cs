@@ -6,6 +6,7 @@ namespace MarbleBoardGame
 {
     public class TextureLib
     {
+        private GraphicsDevice graphicsDevice;
         private ContentManager manager;
         private Dictionary<string, Texture2D> library;
 
@@ -24,8 +25,7 @@ namespace MarbleBoardGame
         /// <param name="assetName">Asset name of texture</param>
         public void LoadTexture(string assetName)
         {
-            Texture2D texture = manager.Load<Texture2D>(assetName);
-            library.Add(assetName, texture);
+            library.Add(assetName, Legacy.LoadTexture(graphicsDevice, assetName));
         }
 
         /// <summary>
@@ -42,8 +42,9 @@ namespace MarbleBoardGame
         /// Creates a texture library
         /// </summary>
         /// <param name="manager">Content Loader</param>
-        public TextureLib(ContentManager manager)
+        public TextureLib(GraphicsDevice graphicsDevice, ContentManager manager)
         {
+            this.graphicsDevice = graphicsDevice;
             this.manager = manager;
             this.library = new Dictionary<string, Texture2D>();
         }

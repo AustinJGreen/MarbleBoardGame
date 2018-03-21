@@ -81,7 +81,7 @@ namespace MarbleBoardGame
             //fonts[32] = fontFactory.LoadFont("Consolas", 32f).Load();
             //fonts[72] = fontFactory.LoadFont("LemonMilk", 72f).Load();
 
-            TextureLib textures = new TextureLib(contentManager);
+            TextureLib textures = new TextureLib(GraphicsDevice, contentManager);
 
             //Load textures
             textures.LoadTexture("pixel");
